@@ -6,6 +6,7 @@ specifiers:
   debug: ~4.3.4
   express: ~4.18.1
   express-art-template: ^1.0.1
+  helmet: ^5.1.0
   http-errors: ~2.0.0
   morgan: ~1.10.0
 
@@ -15,6 +16,7 @@ dependencies:
   debug: 4.3.4
   express: 4.18.1
   express-art-template: 1.0.1_art-template@4.13.2
+  helmet: 5.1.0
   http-errors: 2.0.0
   morgan: 1.10.0
 
@@ -335,6 +337,11 @@ packages:
   /he/1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+    dev: false
+
+  /helmet/5.1.0:
+    resolution: {integrity: sha512-klsunXs8rgNSZoaUrNeuCiWUxyc+wzucnEnFejUg3/A+CaF589k9qepLZZ1Jehnzig7YbD4hEuscGXuBY3fq+g==}
+    engines: {node: '>=12.0.0'}
     dev: false
 
   /html-minifier/3.5.21:
