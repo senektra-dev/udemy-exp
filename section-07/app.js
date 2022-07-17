@@ -5,13 +5,15 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const helmet = require('helmet')
+require('dotenv').config()
 
 const indexRouter = require('./routes/index')
 
 const app = express()
-app.use(helmet())
 
-// view engine setup
+app.use(helmet({
+  contentSecurityPolicy: false
+}))
 app.set('views', path.join(__dirname, 'views'))
 app.engine('art', art)
 app.set('view engine', 'art')
