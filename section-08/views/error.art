@@ -1,0 +1,7 @@
+{{extend './layout.art'}}
+
+{{block 'title'}}Welcome{{/block}}
+
+{{block 'content'}}
+<h1>Oh nyo!</h1>
+{{/block}}
