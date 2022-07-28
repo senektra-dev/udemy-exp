@@ -1,0 +1,24 @@
+{{extend './layout.art'}}
+
+{{block 'title'}}Movie App{{/block}}
+
+{{block 'content'}}
+  {{include './navbar.art'}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Now Playing</h1>
+      </div>
+      <div class="col-sm-12">
+        {{each movies}}
+          <div class="col-md-3 col-sm-4 poster">
+            <a href="/movie/{{$value.id}}">
+              <img src="{{imageBaseUrl}}{{$value.poster_path}}" class="img-responsive" crossorigin="anonymous" />
+            </a>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+{{/block}}
